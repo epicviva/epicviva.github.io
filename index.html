@@ -1,1 +1,150 @@
-<h1>Coming Autumn 2026</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Epicviva — Coming Soon</title>
+  <meta name="description" content="Epicviva by Nugenis Inc. Science-informed dietary supplements. Coming soon." />
+  <link rel="preconnect" href="https://fonts.bunny.net" />
+  <link href="https://fonts.bunny.net/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --blue:  #0082ba;
+      --ink:   #0d1f2d;
+      --white: #ffffff;
+      --grey:  rgba(255,255,255,0.45);
+      --muted: rgba(255,255,255,0.2);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--ink);
+      color: var(--white);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+      text-align: center;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* subtle blue glow */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 20%; left: 50%;
+      transform: translateX(-50%);
+      width: 500px; height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0,130,186,0.12) 0%, transparent 65%);
+      pointer-events: none;
+    }
+
+    .wrap { position: relative; z-index: 1; max-width: 480px; }
+
+    /* Logo placeholder — replace span with <img> when ready */
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      color: var(--blue);
+      margin-bottom: 3rem;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 500;
+      line-height: 1.15;
+      margin-bottom: 1.25rem;
+    }
+    h1 em { font-style: italic; color: var(--grey); }
+
+    p {
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--grey);
+      line-height: 1.8;
+      margin-bottom: 2.5rem;
+    }
+
+    .amazon-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--white);
+      background: var(--blue);
+      padding: 0.85rem 1.75rem;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background 0.22s ease, transform 0.22s ease;
+    }
+    .amazon-btn:hover { background: #2da0cf; transform: translateY(-1px); }
+
+    .disclaimer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255,255,255,0.07);
+      font-size: 0.68rem;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.7rem;
+      color: var(--muted);
+    }
+    footer a { color: var(--muted); text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.15); }
+    footer a:hover { color: var(--blue); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <!-- Replace this span with your logo image when ready:
+         <img src="epicviva-logo.svg" alt="Epicviva" style="height:36px;width:auto;margin-bottom:3rem;" /> -->
+    
+
+    <h1>Our website is<br /><em>coming soon.</em></h1>
+
+    <p>
+      Science-informed dietary supplements by Nugenis Inc.<br />
+      Our SAMe 400&nbsp;mg is available now on Amazon.
+    </p>
+
+    <a href="https://www.amazon.com/dp/B0GJQWLT5P"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="amazon-btn">
+      Shop on Amazon
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2.5"
+           stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M5 12h14M12 5l7 7-7 7"/>
+      </svg>
+    </a>
+
+    <p class="disclaimer">
+      These statements have not been evaluated by the Food and Drug Administration.
+      This product is not intended to diagnose, treat, cure, or prevent any disease.
+    </p>
+
+    <footer>
+      © 2026 Nugenis Inc. &nbsp;·&nbsp;
+      <a href="privacy.html">Privacy Policy</a>
+      &nbsp;·&nbsp;
+
+    </footer>
+
+  </div>
+</body>
+</html>
+
