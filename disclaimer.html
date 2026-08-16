@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Legal Disclaimer — Epicviva</title>
+  <meta name="description" content="Legal and health information disclaimer for the Epicviva website and dietary supplements." />
+
+  <!-- Bunny Fonts — privacy-respecting open source font CDN -->
+  <link rel="preconnect" href="https://fonts.bunny.net" />
+  <link href="https://fonts.bunny.net/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --blue:       #0082ba;
+      --blue-light: #2da0cf;
+      --ink:        #0d1f2d;
+      --white:      #ffffff;
+      --warm-white: #f7f9fb;
+      --text:       #0d1f2d;
+      --text-soft:  #3a5268;
+      --grey:       #7a90a6;
+      --border:     rgba(0,130,186,0.13);
+      --ff-display: 'Playfair Display', Georgia, serif;
+      --ff-body:    'Inter', system-ui, sans-serif;
+      --radius:     4px;
+      --max:        820px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--ff-body);
+      background: var(--warm-white);
+      color: var(--text);
+      font-size: 17px;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 1.75rem;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .nav-logo-text {
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 0.07em;
+      color: var(--blue);
+    }
+
+    .nav-logo-sub {
+      font-size: 0.57rem;
+      font-weight: 400;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      color: var(--grey);
+      align-self: flex-end;
+      padding-bottom: 0.05rem;
+    }
+
+    .back-link {
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--text-soft);
+      transition: color 0.24s ease;
+    }
+
+    .back-link:hover {
+      color: var(--blue);
+    }
+
+    main {
+      padding: 6rem 0 7rem;
+    }
+
+    .container {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 1.75rem;
+    }
+
+    .eyebrow {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 0.85rem;
+    }
+
+    h1 {
+      font-family: var(--ff-display);
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      font-weight: 500;
+      line-height: 1.15;
+      color: var(--text);
+      margin-bottom: 1rem;
+    }
+
+    .intro {
+      font-size: 1.05rem;
+      font-weight: 300;
+      color: var(--text-soft);
+      line-height: 1.9;
+      max-width: 65ch;
+      margin-bottom: 3.5rem;
+    }
+
+    .legal-section {
+      margin-bottom: 2.75rem;
+    }
+
+    .legal-section h2 {
+      font-family: var(--ff-display);
+      font-size: 1.45rem;
+      font-weight: 500;
+      line-height: 1.3;
+      color: var(--text);
+      margin-bottom: 0.8rem;
+    }
+
+    .legal-section p {
+      font-size: 0.94rem;
+      font-weight: 300;
+      color: var(--text-soft);
+      line-height: 1.85;
+      margin-bottom: 0.9rem;
+    }
+
+    .legal-section p:last-child {
+      margin-bottom: 0;
+    }
+
+    .notice {
+      background: #eeedf4;
+      border: 1px solid rgba(89,84,120,0.13);
+      border-radius: 8px;
+      padding: 1.5rem 1.75rem;
+      margin: 2rem 0 3rem;
+    }
+
+    .notice-title {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #7b769e;
+      margin-bottom: 0.55rem;
+    }
+
+    .notice p {
+      font-size: 0.92rem;
+      color: var(--text-soft);
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    .last-updated {
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.76rem;
+      color: var(--grey);
+    }
+
+    footer {
+      background: #07131d;
+      padding: 2.25rem 0;
+      border-top: 1px solid rgba(0,130,186,0.1);
+    }
+
+    .footer-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 1.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-brand {
+      font-size: 0.92rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      color: rgba(255,255,255,0.28);
+    }
+
+    .footer-copy {
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.2);
+      line-height: 1.68;
+      text-align: center;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 1.35rem;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      font-size: 0.76rem;
+      color: rgba(255,255,255,0.26);
+      transition: color 0.24s ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--blue);
+    }
+
+    @media (max-width: 560px) {
+      .nav-logo-sub {
+        display: none;
+      }
+
+      main {
+        padding: 4rem 0 5rem;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-links {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav aria-label="Site navigation">
+    <div class="nav-inner">
+
+      <a href="index.html" class="nav-logo" aria-label="Epicviva home">
+        <span class="nav-logo-text">Epicviva</span>
+        <span class="nav-logo-sub" aria-hidden="true">by Nugenis Inc.</span>
+      </a>
+
+      <a href="index.html" class="back-link">
+        ← Back to Epicviva
+      </a>
+
+    </div>
+  </nav>
+
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <div class="container">
+
+      <p class="eyebrow">Legal information</p>
+
+      <h1>Legal Disclaimer</h1>
+
+      <p class="intro">
+        The information provided by Epicviva is intended to support general
+        education and awareness about dietary supplements and related
+        scientific topics. It is not intended to replace advice from a
+        qualified healthcare professional.
+      </p>
+
+
+      <!-- HEALTH INFORMATION -->
+      <section class="legal-section">
+        <h2>General health information</h2>
+
+        <p>
+          Information on this website is provided for general informational
+          and educational purposes only. It is not intended to provide
+          medical advice, diagnose a health condition, or replace consultation
+          with your physician or another qualified healthcare professional.
+        </p>
+
+        <p>
+          You should not use information contained on this website to diagnose
+          or treat a medical condition or to make decisions about starting,
+          stopping, or changing any medication or other treatment.
+        </p>
+
+        <p>
+          If you have a medical condition, are pregnant or nursing, take
+          prescription medications, or have questions about whether a dietary
+          supplement is appropriate for you, consult your physician or another
+          qualified healthcare professional before use.
+        </p>
+      </section>
+
+
+      <!-- SUPPLEMENTS -->
+      <section class="legal-section">
+        <h2>Dietary supplements</h2>
+
+        <p>
+          Epicviva products are dietary supplements and are not medications.
+          Dietary supplements are not intended to diagnose, treat, cure, or
+          prevent any disease.
+        </p>
+
+        <p>
+          Always read the product label and follow the recommended directions
+          for use. Individual results may vary, and information about an
+          ingredient or supplement should not be interpreted as a guarantee of
+          a particular result.
+        </p>
+      </section>
+
+
+      <!-- FDA -->
+      <div class="notice">
+        <p class="notice-title">FDA disclaimer</p>
+
+        <p>
+          These statements have not been evaluated by the Food and Drug
+          Administration. This product is not intended to diagnose, treat,
+          cure, or prevent any disease.
+        </p>
+      </div>
+
+
+      <!-- SCIENTIFIC INFORMATION -->
+      <section class="legal-section">
+        <h2>Scientific and educational information</h2>
+
+        <p>
+          Scientific information presented on this website may be based on
+          published research, scientific literature, historical or traditional
+          use, or other publicly available information. Research findings may
+          differ depending on the study population, methodology, dosage,
+          formulation, and other factors.
+        </p>
+
+        <p>
+          The presence of scientific information on this website does not mean
+          that a particular product or ingredient has been proven to prevent,
+          treat, or cure a particular disease or medical condition.
+        </p>
+      </section>
+
+
+      <!-- THIRD PARTY INFORMATION -->
+      <section class="legal-section">
+        <h2>Third-party information and links</h2>
+
+        <p>
+          This website may contain links to websites or information provided
+          by third parties. These links are provided for convenience and
+          informational purposes. Epicviva does not control and is not
+          responsible for the content, accuracy, privacy practices, or
+          availability of third-party websites.
+        </p>
+      </section>
+
+
+      <!-- CONTACT -->
+      <section class="legal-section">
+        <h2>Questions</h2>
+
+        <p>
+          If you have questions about Epicviva products or information
+          presented on this website, please
+          <a href="index.html#contact"
+             style="color:var(--blue);border-bottom:1px solid var(--blue);">
+            contact us
+          </a>.
+        </p>
+      </section>
+
+
+      <p class="last-updated">
+        Last updated: August 2026
+      </p>
+
+    </div>
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+
+      <span class="footer-brand">Epicviva</span>
+
+      <p class="footer-copy">
+        © 2026 Nugenis Inc. All rights reserved.
+      </p>
+
+      <ul class="footer-links" role="list">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#science">Science</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li>
+          <a href="https://nugenis.eu"
+             target="_blank"
+             rel="noopener noreferrer">
+            NUGENIS Austria
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </footer>
+
+</body>
+</html>

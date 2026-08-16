@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — EPICVIVA</title>
+  <meta name="description" content="Privacy Policy for the EPICVIVA website, a consumer brand of NUGENIS Inc." />
+
+  <!-- Bunny Fonts -->
+  <link rel="preconnect" href="https://fonts.bunny.net" />
+  <link href="https://fonts.bunny.net/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --blue: #0082ba;
+      --ink: #0d1f2d;
+      --white: #ffffff;
+      --warm-white: #f7f9fb;
+      --text: #0d1f2d;
+      --text-soft: #3a5268;
+      --grey: #7a90a6;
+      --border: rgba(0,130,186,0.13);
+      --ff-display: 'Playfair Display', Georgia, serif;
+      --ff-body: 'Inter', system-ui, sans-serif;
+      --max: 700px;
+      --ease: 0.22s ease;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--ff-body);
+      background: var(--warm-white);
+      color: var(--text);
+      font-size: 17px;
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration: none;
+      border-bottom: 1px solid var(--blue);
+      transition: color var(--ease);
+    }
+
+    a:hover {
+      color: #2da0cf;
+    }
+
+    nav {
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 1.75rem;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .nav-brand {
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      color: var(--blue);
+      text-decoration: none;
+      border: none;
+    }
+
+    .nav-back {
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--grey);
+      text-decoration: none;
+      border: none;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      transition: color var(--ease);
+    }
+
+    .nav-back:hover {
+      color: var(--blue);
+    }
+
+    .page {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 4rem 1.75rem 5rem;
+    }
+
+    .page-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 0.75rem;
+    }
+
+    .page-title {
+      font-family: var(--ff-display);
+      font-size: 2.2rem;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+      line-height: 1.2;
+    }
+
+    .page-date {
+      font-size: 0.82rem;
+      color: var(--grey);
+      margin-bottom: 2.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2 {
+      font-family: var(--ff-display);
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: var(--text);
+      margin: 2.25rem 0 0.75rem;
+    }
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text);
+      margin: 1.5rem 0 0.5rem;
+    }
+
+    p {
+      font-size: 0.97rem;
+      font-weight: 300;
+      color: var(--text-soft);
+      line-height: 1.85;
+      margin-bottom: 0.9rem;
+    }
+
+    ul {
+      margin: 0.5rem 0 0.9rem 1.35rem;
+    }
+
+    ul li {
+      font-size: 0.97rem;
+      font-weight: 300;
+      color: var(--text-soft);
+      line-height: 1.85;
+      margin-bottom: 0.35rem;
+    }
+
+    .callout {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .callout p {
+      margin: 0;
+    }
+
+    footer {
+      background: #07131d;
+      padding: 1.75rem;
+      border-top: 1px solid rgba(0,130,186,0.1);
+    }
+
+    .footer-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-brand {
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      color: rgba(255,255,255,0.28);
+    }
+
+    .footer-copy {
+      font-size: 0.63rem;
+      color: rgba(255,255,255,0.18);
+      line-height: 1.6;
+    }
+
+    .footer-home {
+      font-size: 0.7rem;
+      color: rgba(255,255,255,0.3);
+      border-bottom: 1px solid rgba(255,255,255,0.15);
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .page-title {
+        font-size: 1.9rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html" class="nav-brand">EPICVIVA</a>
+  <a href="index.html" class="nav-back">
+    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M19 12H5M12 5l-7 7 7 7"></path>
+    </svg>
+    Back to home
+  </a>
+</nav>
+
+<main class="page">
+
+  <p class="page-label">Legal</p>
+  <h1 class="page-title">Privacy Policy</h1>
+  <p class="page-date">
+    Effective Date: August 16, 2026 · EPICVIVA · NUGENIS Inc.
+  </p>
+
+  <div class="callout">
+    <p>
+      <strong>Summary:</strong> We collect only the information reasonably necessary
+      to operate the EPICVIVA website and respond to inquiries submitted through the
+      contact form. We do not sell personal information and do not use the website
+      for user accounts or online purchases.
+    </p>
+  </div>
+
+  <p>
+    NUGENIS Inc. ("NUGENIS," "we," "us," or "our") operates the EPICVIVA website
+    (the "Website"). EPICVIVA is a consumer brand of NUGENIS Inc.
+  </p>
+
+  <p>
+    This Privacy Policy explains what information we collect through the Website,
+    how we use it, and how we handle information submitted to us.
+  </p>
+
+  <h2>1. Information We Collect</h2>
+
+  <p>
+    We aim to keep the Website simple and collect only information that is
+    reasonably necessary for the purposes described below.
+  </p>
+
+  <h3>Information You Provide to Us</h3>
+
+  <p>
+    If you contact us through the contact form on the EPICVIVA homepage, we may
+    collect information you choose to provide, such as:
+  </p>
+
+  <ul>
+    <li>Your name</li>
+    <li>Your email address</li>
+    <li>The contents of your message</li>
+    <li>Any other information you voluntarily include in your submission</li>
+  </ul>
+
+  <p>
+    Please do not submit sensitive personal information, medical information,
+    health information, financial information, passwords, or other confidential
+    information through the Website's contact form.
+  </p>
+
+  <h3>Information Collected Automatically</h3>
+
+  <p>
+    The Website is hosted using GitHub Pages. Like most websites, hosting and
+    network infrastructure may process certain technical information associated
+    with requests to the Website, such as IP address, browser type, device
+    information, date and time of access, and requested pages.
+  </p>
+
+  <p>
+    We do not use the Website to create user accounts, process payments, or
+    collect information for online purchases.
+  </p>
+
+  <h2>2. How We Use Information</h2>
+
+  <p>We may use information you provide to:</p>
+
+  <ul>
+    <li>Respond to your questions or requests;</li>
+    <li>Communicate with you regarding your inquiry;</li>
+    <li>Maintain and improve the Website;</li>
+    <li>Protect the Website against spam, abuse, fraud, and security threats; and</li>
+    <li>Comply with applicable legal obligations.</li>
+  </ul>
+
+  <p>
+    We do not use information submitted through the contact form to send
+    marketing emails unless you separately provide consent or otherwise have a
+    lawful basis for such communications.
+  </p>
+
+  <h2>3. Contact Form Service</h2>
+
+  <p>
+    Our contact form uses
+    <a href="https://web3forms.com/" target="_blank" rel="noopener noreferrer">Web3Forms</a>,
+    a third-party form-processing service, to receive and forward contact-form
+    submissions to us.
+  </p>
+
+  <p>
+    When you submit the contact form, the information you enter is transmitted
+    to Web3Forms for processing and delivery to us. Web3Forms states that
+    submitted form information may be stored by the service for a limited period
+    depending on the applicable Web3Forms plan.
+  </p>
+
+  <p>
+    Web3Forms currently states that form submissions are stored for 30 days on
+    its free plans and for 1 year on its Pro plans. Its applicable terms and
+    privacy practices may change over time.
+  </p>
+
+  <p>
+    You can review Web3Forms' current privacy and data-handling information on
+    its website.
+  </p>
+
+  <p>
+    We recommend that you do not submit sensitive personal or health information
+    through our contact form.
+  </p>
+
+  <h2>4. Cookies and Tracking</h2>
+
+  <p>
+    The Website is designed to operate without advertising trackers, user
+    accounts, or behavioral advertising.
+  </p>
+
+  <p>
+    We do not intentionally use the Website to sell personal information or to
+    engage in targeted advertising based on your activity on the Website.
+  </p>
+
+  <p>
+    If we add analytics, advertising technologies, embedded services, cookies,
+    or other tracking technologies in the future, we may update this Privacy
+    Policy to describe those technologies and their purposes.
+  </p>
+
+  <h2>5. Links to Other Websites</h2>
+
+  <p>
+    The Website may contain links to third-party websites, including Amazon and
+    websites operated by companies or organizations associated with NUGENIS.
+  </p>
+
+  <p>
+    We do not control the privacy practices of third-party websites. When you
+    follow a link to another website, that website's privacy policy and terms
+    apply to your activity there.
+  </p>
+
+  <p>
+    In particular, purchases of EPICVIVA products made through Amazon are
+    subject to Amazon's applicable policies and terms.
+  </p>
+
+  <h2>6. Information Sharing</h2>
+
+  <p>
+    We may share information with service providers that help us operate the
+    Website or respond to inquiries, including our contact-form service provider.
+  </p>
+
+  <p>We may also disclose information:</p>
+
+  <ul>
+    <li>When required by law;</li>
+    <li>To respond to lawful requests from governmental authorities;</li>
+    <li>To protect our rights, property, or safety or the rights, property, or safety of others; or</li>
+    <li>In connection with a corporate transaction such as a merger, acquisition, financing, reorganization, or sale of assets.</li>
+  </ul>
+
+  <p>
+    We do not sell personal information submitted through the Website.
+  </p>
+
+  <h2>7. Data Retention</h2>
+
+  <p>
+    We retain contact information and communications for as long as reasonably
+    necessary to respond to inquiries, maintain appropriate business records,
+    resolve disputes, comply with legal obligations, and protect our legitimate
+    business interests.
+  </p>
+
+  <p>
+    Our third-party service providers may maintain information according to
+    their own applicable retention policies. For example, Web3Forms currently
+    states that form submissions are stored for 30 days on free plans and for
+    1 year on Pro plans.
+  </p>
+
+  <h2>8. Children's Privacy</h2>
+
+  <p>
+    The EPICVIVA Website and our dietary supplement products are intended for
+    adults and are not directed to children or minors.
+  </p>
+
+  <p>
+    We do not knowingly collect personal information from individuals under 18
+    through the Website.
+  </p>
+
+  <p>
+    If we learn that we have received personal information from an individual
+    under 18, we will take reasonable steps to delete that information.
+  </p>
+
+  <p>
+    If you believe that an individual under 18 has provided personal information
+    to us, please contact us through the contact form on the EPICVIVA homepage
+    so that we can review the matter and take appropriate action.
+  </p>
+
+  <h2>9. Your Choices and Privacy Rights</h2>
+
+  <p>
+    Depending on where you live and applicable law, you may have rights
+    concerning personal information we hold about you, including rights to
+    request access to, correction of, or deletion of certain information.
+  </p>
+
+  <p>
+    To make a privacy-related request, please use the
+    <a href="index.html#contact">contact form on the EPICVIVA homepage</a>.
+  </p>
+
+  <p>
+    We may need to verify your identity before completing certain requests.
+  </p>
+
+  <p>
+    Nothing in this Privacy Policy is intended to provide rights or remedies
+    beyond those required by applicable law.
+  </p>
+
+  <h2>10. Security</h2>
+
+  <p>
+    We use reasonable measures appropriate to the nature of the information and
+    our activities to protect information submitted through the Website.
+  </p>
+
+  <p>
+    However, no website, internet transmission, or electronic storage system can
+    be guaranteed to be completely secure.
+  </p>
+
+  <h2>11. Changes to This Privacy Policy</h2>
+
+  <p>
+    We may update this Privacy Policy from time to time to reflect changes to
+    the Website, our practices, applicable law, or the services we use.
+  </p>
+
+  <p>
+    When we make changes, we will update the Effective Date at the beginning of
+    this Privacy Policy.
+  </p>
+
+  <h2>12. Contact Us</h2>
+
+  <p>
+    If you have questions about this Privacy Policy or wish to make a
+    privacy-related request, please use the
+    <a href="index.html#contact">contact form on the EPICVIVA homepage</a>.
+  </p>
+
+  <div class="callout">
+    <p>
+      <strong>EPICVIVA</strong> is a consumer brand of <strong>NUGENIS Inc.</strong>
+    </p>
+  </div>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <span class="footer-brand">EPICVIVA</span>
+    <p class="footer-copy">
+      © 2026 NUGENIS Inc. All rights reserved.
+    </p>
+    <a href="index.html" class="footer-home">← Back to home</a>
+  </div>
+</footer>
+
+</body>
+</html>
