@@ -9,7 +9,7 @@
 
   <!-- Bunny Fonts — privacy-respecting open source font CDN -->
   <link rel="preconnect" href="https://fonts.bunny.net" />
-  <link href="https://fonts.bunny.net/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.bunny.net/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
 
   <style>
     :root {
@@ -23,7 +23,7 @@
       --grey:       #7a90a6;
       --border:     rgba(0,130,186,0.13);
       --ff-display: 'Playfair Display', Georgia, serif;
-      --ff-body:    'Inter', system-ui, sans-serif;
+      --ff-body:    'DM Sans', sans-serif;
       --radius:     4px;
       --max:        820px;
     }
@@ -56,9 +56,8 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(255,255,255,0.96);
-      backdrop-filter: blur(14px);
-      border-bottom: 1px solid var(--border);
+      background: var(--ink);
+      border-bottom: 1px solid rgba(255,255,255,.08);
     }
 
     .nav-inner {
@@ -81,7 +80,7 @@
       font-size: 1.1rem;
       font-weight: 600;
       letter-spacing: 0.07em;
-      color: var(--blue);
+      color: var(--white);
     }
 
     .nav-logo-sub {
@@ -89,7 +88,7 @@
       font-weight: 400;
       letter-spacing: 0.13em;
       text-transform: uppercase;
-      color: var(--grey);
+      color: rgba(255,255,255,.72);
       align-self: flex-end;
       padding-bottom: 0.05rem;
     }
@@ -102,7 +101,7 @@
     }
 
     .back-link:hover {
-      color: var(--blue);
+      color: #64c5e4;
     }
 
     main {
@@ -199,7 +198,7 @@
     }
 
     footer {
-      background: #07131d;
+      background: var(--ink);
       padding: 2.25rem 0;
       border-top: 1px solid rgba(0,130,186,0.1);
     }
@@ -219,12 +218,12 @@
       font-size: 0.92rem;
       font-weight: 600;
       letter-spacing: 0.1em;
-      color: rgba(255,255,255,0.28);
+      color: rgba(255,255,255,0.72);
     }
 
     .footer-copy {
-      font-size: 0.72rem;
-      color: rgba(255,255,255,0.2);
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.58);
       line-height: 1.68;
       text-align: center;
     }
@@ -237,8 +236,8 @@
     }
 
     .footer-links a {
-      font-size: 0.76rem;
-      color: rgba(255,255,255,0.26);
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.72);
       transition: color 0.24s ease;
     }
 
@@ -274,8 +273,7 @@
     <div class="nav-inner">
 
       <a href="index.html" class="nav-logo" aria-label="Epicviva home">
-        <span class="nav-logo-text">Epicviva</span>
-        <span class="nav-logo-sub" aria-hidden="true">by Nugenis Inc.</span>
+        <img src="epicviva-logo.png" alt="Epicviva" style="height:28px;width:auto;" />
       </a>
 
       <a href="index.html" class="back-link">
@@ -420,7 +418,7 @@
   <footer>
     <div class="footer-inner">
 
-      <span class="footer-brand">Epicviva</span>
+      <img class="footer-brand" src="epicviva-logo.png" alt="Epicviva" style="height:22px;width:auto;" />
 
       <p class="footer-copy">
         © 2026 Nugenis Inc. All rights reserved.
